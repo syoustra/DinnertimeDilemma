@@ -4,22 +4,55 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
 
 import com.syoustra.dinnertimedilemma.R;
+import com.syoustra.dinnertimedilemma.model.Page;
+import com.syoustra.dinnertimedilemma.model.Restaurant;
 
 public class SelectorActivity extends AppCompatActivity {
+
+    private Restaurant mRestaurant = new Restaurant();
+    private TextView mRestaurantTextView;
+    private Button mMap;
+    private Button mMenu;
+    private Button mFacebook;
+    private Button mTwitter;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selector);
 
+
 //        TextView restaurantLabel = (TextView) findViewById(R.id.restaurantTextView);
 //        Button
+
+        mRestaurantTextView = (TextView)findViewById(R.id.restaurantTextView);
+        mMap = (Button)findViewById(R.id.mapButton);
+        mMenu = (Button)findViewById(R.id.menuButton);
+        mFacebook = (Button)findViewById(R.id.facebookButton);
+        mTwitter = (Button)findViewById(R.id.twitterButton);
 
 
     }
 
+    private void loadPage() {
+        Page page = mRestaurant.getPage(0);
+
+        mRestaurantTextView.setText(page.getRestaurant());
+        mMap.setText(page.getMap());
+        mMenu.setText(page.getMenu());
+        mFacebook.setText(page.getFacebook());
+        mTwitter.setText(page.getTwitter());
+    }
+
+
+
+    /// ******************ALSO CHECK GETPAGE() ON RESTAURANT.JAVA PAGE**************
     // **************** MAKE SURE YOU ADD IN REDO BUTTON ****************
 
 
