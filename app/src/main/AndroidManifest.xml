@@ -20,7 +20,8 @@
         <activity
             android:name=".SelectorActivity"
             android:label="@string/title_activity_selector"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.syoustra.dinnertimedilemma.MainActivity" />

@@ -1,7 +1,7 @@
 package com.syoustra.dinnertimedilemma;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -11,6 +11,11 @@ public class SelectorActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selector);
+
+//        TextView restaurantLabel = (TextView) findViewById(R.id.restaurantTextView);
+//        Button
+
+
     }
 
     @Override

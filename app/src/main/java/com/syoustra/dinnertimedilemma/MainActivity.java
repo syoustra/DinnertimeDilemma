@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import static com.syoustra.dinnertimedilemma.R.string.no_blame;
+
 public class MainActivity extends AppCompatActivity {
 
     private Button mRandomSelectorButton;
@@ -24,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         mRandomSelectorButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Just don't blame me...", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, getString(no_blame), Toast.LENGTH_SHORT).show();
                 selectRestaurant();
             }
         });

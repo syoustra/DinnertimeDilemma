@@ -6,5 +6,16 @@
     <string name="hungry">Are You Hungry???</string>
     <string name="choose">Don\'t Wanna Choose?</string>
     <string name="title_activity_selector">SelectorActivity</string>
+    <string name="no_blame">Just don\'t blame me .....</string>
+    <string name="menu">Menu</string>
+    <string name="map">Map</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="try_again">Nope, not tonight.</string>
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
+    <!--<string name=""></string>-->
 
 </resources>
