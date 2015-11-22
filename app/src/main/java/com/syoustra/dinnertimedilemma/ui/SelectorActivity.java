@@ -51,7 +51,11 @@ public class SelectorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
-                
+    // TESTING WITH HARD-CODED RESTAURANT NAME (a la FunFacts)
+                String foodPlace = "StuffYourGullet Town";
+                mRestaurantTextView.setText(foodPlace);
+                String tweetTime = "TweetMe, my tweetie!";
+                mTwitter.setText(tweetTime);
             }
         });
 
