@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+//selectRestaurant method is what opens the second page
     private void selectRestaurant() {
         Intent intent = new Intent(this, SelectorActivity.class);
         startActivity(intent);

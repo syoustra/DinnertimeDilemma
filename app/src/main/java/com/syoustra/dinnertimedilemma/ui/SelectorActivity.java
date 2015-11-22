@@ -4,8 +4,10 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.syoustra.dinnertimedilemma.R;
 import com.syoustra.dinnertimedilemma.model.Page;
@@ -13,12 +15,15 @@ import com.syoustra.dinnertimedilemma.model.Restaurant;
 
 public class SelectorActivity extends AppCompatActivity {
 
+    // RESTAURANT ARRAY VARIABLES
     private Restaurant mRestaurant = new Restaurant();
     private TextView mRestaurantTextView;
     private Button mMap;
     private Button mMenu;
     private Button mFacebook;
     private Button mTwitter;
+
+    private Button mSelectAgainButton;
 
 
 
@@ -31,11 +36,26 @@ public class SelectorActivity extends AppCompatActivity {
 //        TextView restaurantLabel = (TextView) findViewById(R.id.restaurantTextView);
 //        Button
 
+        // AGAIN, RESTAURANT ARRAY (I think!)
         mRestaurantTextView = (TextView)findViewById(R.id.restaurantTextView);
         mMap = (Button)findViewById(R.id.mapButton);
         mMenu = (Button)findViewById(R.id.menuButton);
         mFacebook = (Button)findViewById(R.id.facebookButton);
         mTwitter = (Button)findViewById(R.id.twitterButton);
+
+
+        mSelectAgainButton = (Button)findViewById(R.id.selectAgainButton);
+
+        // NOPE, SELECT AGAIN
+        mSelectAgainButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
+                
+            }
+        });
+
+
 
 
     }
