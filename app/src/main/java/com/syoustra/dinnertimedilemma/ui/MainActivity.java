@@ -1,24 +1,22 @@
 package com.syoustra.dinnertimedilemma.ui;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.syoustra.dinnertimedilemma.R;
-import com.syoustra.dinnertimedilemma.model.Restaurant;
 
 import static com.syoustra.dinnertimedilemma.R.string.no_blame;
 
 public class MainActivity extends AppCompatActivity {
 
     //FunFacts Version (I hope!!!)
-    private Restaurant mRestaurant = new Restaurant();
+// DON'T NEED THIS EITHER    private Restaurant mRestaurant = new Restaurant();
 
 
     private Button mRandomSelectorButton;
@@ -36,7 +34,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, getString(no_blame), Toast.LENGTH_SHORT).show();
                 ///FunFact Version of things
-                String foodPlace = mRestaurant.getFoodPlace();
+//   DON'T NEED TO DO THIS ... HAPPENS IN NEXT PAGE'S ON-CREATE
+//                String foodPlace = mRestaurant.getFoodPlace();
 
 
 

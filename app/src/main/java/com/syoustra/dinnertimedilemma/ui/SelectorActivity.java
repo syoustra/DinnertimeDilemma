@@ -10,6 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.syoustra.dinnertimedilemma.R;
+import com.syoustra.dinnertimedilemma.model.Page;
 import com.syoustra.dinnertimedilemma.model.Restaurant;
 
 public class SelectorActivity extends AppCompatActivity {
@@ -43,13 +44,16 @@ public class SelectorActivity extends AppCompatActivity {
         mTwitter = (Button)findViewById(R.id.twitterButton);
 
 
+        loadPage();
+
+
         mSelectAgainButton = (Button)findViewById(R.id.selectAgainButton);
 
 
-        ///FunFacts Version (I hope!!!!!)
-        String foodPlace = mRestaurant.getFoodPlace();
-        mRestaurantTextView.setText(foodPlace);
-
+//        ///FunFacts Version (I hope!!!!!)
+//        String foodPlace = mRestaurant.getFoodPlace();
+//        mRestaurantTextView.setText(foodPlace);
+//
 
         // NOPE, SELECT AGAIN
         mSelectAgainButton.setOnClickListener(new View.OnClickListener() {
@@ -57,18 +61,29 @@ public class SelectorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
 
-                ///FunFact Version of things
-                String foodPlace = mRestaurant.getFoodPlace();
-
-
-                mRestaurantTextView.setText(foodPlace);
+//                ///FunFact Version of things
+//                String foodPlace = mRestaurant.getFoodPlace();
+//
+//
+//                mRestaurantTextView.setText(foodPlace);
             }
         });
 //  NOT SURE ABOUT THIS ... JUST COPIED FROM FUNFACTS
    //     mSelectAgainButton.setOnClickListener(listener);
 
-
+// TRYING FROM INTERACTIVE STORY w/RANDOM OF FUNFACTS
     }
+
+    private void loadPage() {
+        Page page = mRestaurant.getPage(0);
+
+        mRestaurantTextView.setText(page.getRestaurant());
+        mMap.setText(page.getMap());
+        mMenu.setText(page.getMenu());
+        mFacebook.setText(page.getFacebook());
+        mTwitter.setText(page.getTwitter());
+    }
+
 
     // TEMPORARILY COMMENTING OUT
 //    private void loadPage() {
