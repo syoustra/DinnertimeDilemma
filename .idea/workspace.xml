@@ -59,11 +59,11 @@
       <file leaf-file-name="SelectorActivity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/ui/SelectorActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6321586">
-              <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.97356826">
+              <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
               <folding>
-                <element signature="e#1595#2750#0" expanded="true" />
-                <element signature="e#2749#2750#0" expanded="true" />
+                <element signature="e#1519#1901#0" expanded="true" />
+                <element signature="e#1900#1901#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -118,11 +118,8 @@
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Restaurant.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-              <folding>
-                <element signature="e#1242#1243#0" expanded="true" />
-                <element signature="e#1283#1284#0" expanded="true" />
-              </folding>
+              <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -1631,8 +1628,8 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Page.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Restaurants.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_selector.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Restaurant.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/ui/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Restaurant.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/ui/SelectorActivity.java" />
       </list>
     </option>
@@ -2211,21 +2208,18 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/model/Restaurant.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-          <folding>
-            <element signature="e#1242#1243#0" expanded="true" />
-            <element signature="e#1283#1284#0" expanded="true" />
-          </folding>
+          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/syoustra/dinnertimedilemma/ui/SelectorActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6321586">
-          <caret line="67" column="43" selection-start-line="67" selection-start-column="43" selection-end-line="67" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.97356826">
+          <caret line="57" column="55" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="55" />
           <folding>
-            <element signature="e#1595#2750#0" expanded="true" />
-            <element signature="e#2749#2750#0" expanded="true" />
+            <element signature="e#1519#1901#0" expanded="true" />
+            <element signature="e#1900#1901#0" expanded="true" />
           </folding>
         </state>
       </provider>

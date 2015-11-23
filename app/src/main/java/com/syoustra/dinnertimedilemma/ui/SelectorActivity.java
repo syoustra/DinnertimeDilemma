@@ -10,10 +10,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.syoustra.dinnertimedilemma.R;
-import com.syoustra.dinnertimedilemma.model.Page;
 import com.syoustra.dinnertimedilemma.model.Restaurant;
-
-import java.util.Random;
 
 public class SelectorActivity extends AppCompatActivity {
 
@@ -53,27 +50,9 @@ public class SelectorActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
-    // TESTING WITH HARD-CODED RESTAURANT NAME (a la FunFacts)
-//                String foodPlace = "StuffYourGullet Town";
-//                mRestaurantTextView.setText(foodPlace);
-//                String tweetTime = "TweetMe, my tweetie!";
-//                mTwitter.setText(tweetTime);
-                String[] foodPlaces = {
-                        "Simply Thai",
-                        "Tap Room",
-                        "The Planet",
-                        "BDubs",
-                        "Barrett Bar",
-                        "Sapporo",
-                        "Cheesecake Factory"
-                };
-                String foodPlace = "";
 
-     // RANDOM SELECTION FROM FUNFACTS
-                Random randomGenerator = new Random();
-                int randomNumber = randomGenerator.nextInt(foodPlaces.length);
-
-                foodPlace = foodPlaces[randomNumber];
+                ///FunFact Version of things
+                String foodPlace = mRestaurant.getFoodPlace();
 
 
                 mRestaurantTextView.setText(foodPlace);
@@ -85,23 +64,21 @@ public class SelectorActivity extends AppCompatActivity {
 
     }
 
-    private void loadPage() {
-        Page page = mRestaurant.getPage(0);
-
-        mRestaurantTextView.setText(page.getRestaurant());
-        mMap.setText(page.getMap());
-        mMenu.setText(page.getMenu());
-        mFacebook.setText(page.getFacebook());
-        mTwitter.setText(page.getTwitter());
-    }
+    // TEMPORARILY COMMENTING OUT
+//    private void loadPage() {
+//        Page page = mRestaurant.getPage(0);
+//
+//        mRestaurantTextView.setText(page.getRestaurant());
+//        mMap.setText(page.getMap());
+//        mMenu.setText(page.getMenu());
+//        mFacebook.setText(page.getFacebook());
+//        mTwitter.setText(page.getTwitter());
+//    }
 
 
 
     /// ******************ALSO CHECK GETPAGE() ON RESTAURANT.JAVA PAGE**************
     // **************** MAKE SURE YOU ADD IN REDO BUTTON ****************
-
-
-
 
 
 
