@@ -61,6 +61,9 @@ public class SelectorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
 
+
+                loadPage();
+
 //                ///FunFact Version of things
 //                String foodPlace = mRestaurant.getFoodPlace();
 //

@@ -84,6 +84,12 @@ public class Restaurant {
 
     ///CHANGE PAGE TO FOODPLACE/GET FOODPLACE
     ///TRYING TO ADD RANDOMIZER FROM FUNFACTS
+
+//    public Page getPage(int pageNumber) {
+//        return mPages[pageNumber];
+//    }
+
+
     Random randomGenerator = new Random();
     int randomNumber = randomGenerator.nextInt(3);
 
