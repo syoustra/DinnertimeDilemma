@@ -13,6 +13,8 @@ import com.syoustra.dinnertimedilemma.R;
 import com.syoustra.dinnertimedilemma.model.Page;
 import com.syoustra.dinnertimedilemma.model.Restaurant;
 
+import java.util.Random;
+
 public class SelectorActivity extends AppCompatActivity {
 
     // RESTAURANT ARRAY VARIABLES
@@ -52,14 +54,33 @@ public class SelectorActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Toast.makeText(SelectorActivity.this, "Picky, picky!", Toast.LENGTH_SHORT).show();
     // TESTING WITH HARD-CODED RESTAURANT NAME (a la FunFacts)
-                String foodPlace = "StuffYourGullet Town";
+//                String foodPlace = "StuffYourGullet Town";
+//                mRestaurantTextView.setText(foodPlace);
+//                String tweetTime = "TweetMe, my tweetie!";
+//                mTwitter.setText(tweetTime);
+                String[] foodPlaces = {
+                        "Simply Thai",
+                        "Tap Room",
+                        "The Planet",
+                        "BDubs",
+                        "Barrett Bar",
+                        "Sapporo",
+                        "Cheesecake Factory"
+                };
+                String foodPlace = "";
+
+     // RANDOM SELECTION FROM FUNFACTS
+                Random randomGenerator = new Random();
+                int randomNumber = randomGenerator.nextInt(foodPlaces.length);
+
+                foodPlace = foodPlaces[randomNumber];
+
+
                 mRestaurantTextView.setText(foodPlace);
-                String tweetTime = "TweetMe, my tweetie!";
-                mTwitter.setText(tweetTime);
             }
         });
-
-
+//  NOT SURE ABOUT THIS ... JUST COPIED FROM FUNFACTS
+   //     mSelectAgainButton.setOnClickListener(listener);
 
 
     }
