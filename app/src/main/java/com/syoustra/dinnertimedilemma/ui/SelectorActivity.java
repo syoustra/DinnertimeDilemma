@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,10 +19,10 @@ public class SelectorActivity extends AppCompatActivity {
     // RESTAURANT ARRAY VARIABLES
     private Restaurant mRestaurant = new Restaurant();
     private TextView mRestaurantTextView;
-    private Button mMap;
-    private Button mMenu;
-    private Button mFacebook;
-    private Button mTwitter;
+    private ImageButton mMap;
+    private ImageButton mMenu;
+    private ImageButton mFacebook;
+    private ImageButton mTwitter;
 
     private Button mSelectAgainButton;
 
@@ -38,10 +39,10 @@ public class SelectorActivity extends AppCompatActivity {
 
         // AGAIN, RESTAURANT ARRAY (I think!)
         mRestaurantTextView = (TextView)findViewById(R.id.restaurantTextView);
-        mMap = (Button)findViewById(R.id.mapButton);
-        mMenu = (Button)findViewById(R.id.menuButton);
-        mFacebook = (Button)findViewById(R.id.facebookButton);
-        mTwitter = (Button)findViewById(R.id.twitterButton);
+        mMap = (ImageButton) findViewById(R.id.mapButton);
+        mMenu = (ImageButton) findViewById(R.id.menuButton);
+        mFacebook = (ImageButton) findViewById(R.id.facebookButton);
+        mTwitter = (ImageButton) findViewById(R.id.twitterButton);
 
 
         loadPage();
@@ -81,10 +82,11 @@ public class SelectorActivity extends AppCompatActivity {
         Page page = mRestaurant.getPage(0);
 
         mRestaurantTextView.setText(page.getRestaurant());
-        mMap.setText(page.getMap());
-        mMenu.setText(page.getMenu());
-        mFacebook.setText(page.getFacebook());
-        mTwitter.setText(page.getTwitter());
+/// FROM TESTING ROUND OF PLAIN BUTTONS
+//        mMap.setText(page.getMap());
+//        mMenu.setText(page.getMenu());
+//        mFacebook.setText(page.getFacebook());
+//        mTwitter.setText(page.getTwitter());
     }
 
 
