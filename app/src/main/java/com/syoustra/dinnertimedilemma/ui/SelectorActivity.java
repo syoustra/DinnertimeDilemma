@@ -45,6 +45,12 @@ public class SelectorActivity extends AppCompatActivity {
 
         mSelectAgainButton = (Button)findViewById(R.id.selectAgainButton);
 
+
+        ///FunFacts Version (I hope!!!!!)
+        String foodPlace = mRestaurant.getFoodPlace();
+        mRestaurantTextView.setText(foodPlace);
+
+
         // NOPE, SELECT AGAIN
         mSelectAgainButton.setOnClickListener(new View.OnClickListener() {
             @Override
