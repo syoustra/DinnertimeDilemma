@@ -14,48 +14,64 @@
         android:text="[ RESTAURANT NAME ]"
         android:id="@+id/restaurantTextView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
         android:text="@string/menu"
         android:id="@+id/menuButton"
-        android:layout_centerVertical="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"/>
+        android:src="@drawable/menu"
+        android:scaleType="centerInside"
+        android:contentDescription="&quot;Menu&quot;"
+        android:layout_below="@+id/restaurantTextView"
+        android:layout_alignRight="@+id/restaurantTextView"
+        android:layout_alignEnd="@+id/restaurantTextView"
+        android:layout_marginTop="41dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
         android:text="@string/map"
         android:id="@+id/mapButton"
         android:layout_alignTop="@+id/menuButton"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:src="@drawable/google_maps"
+        android:scaleType="centerInside"
+        android:contentDescription="&quot;Google Maps&quot;"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
         android:text="@string/twitter"
         android:id="@+id/twitterButton"
-        android:layout_marginTop="57dp"
-        android:layout_below="@+id/mapButton"
+        android:layout_marginLeft="31dp"
+        android:layout_marginStart="31dp"
+        android:contentDescription="&quot;Twitter&quot;"
+        android:scaleType="centerInside"
+        android:src="@drawable/twitter"
+        android:layout_above="@+id/selectAgainButton"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginLeft="31dp"
-        android:layout_marginStart="31dp"/>
+        android:layout_marginBottom="35dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageButton
+        android:layout_width="100dip"
+        android:layout_height="100dip"
         android:text="@string/facebook"
         android:id="@+id/facebookButton"
         android:layout_alignTop="@+id/twitterButton"
         android:layout_alignRight="@+id/menuButton"
         android:layout_alignEnd="@+id/menuButton"
         android:layout_marginRight="46dp"
-        android:layout_marginEnd="46dp"/>
+        android:layout_marginEnd="46dp"
+        android:src="@drawable/facebook"
+        android:scaleType="centerInside"
+        android:contentDescription="&quot;Facebook&quot;"/>
 
     <Button
         android:layout_width="wrap_content"
@@ -63,6 +79,8 @@
         android:text="@string/try_again"
         android:id="@+id/selectAgainButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:contentDescription="&quot;Select Again&quot;"
+        android:textSize="20sp"/>
 
 </RelativeLayout>
