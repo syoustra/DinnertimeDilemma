@@ -56,6 +56,37 @@ public class SelectorActivity extends AppCompatActivity {
 //        mRestaurantTextView.setText(foodPlace);
 //
 
+        //TOAST THE BUTTON CLICKS, SEE IF THEY ARE LIVE
+
+        mMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SelectorActivity.this, "MapTime", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SelectorActivity.this, "Menu", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mFacebook.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SelectorActivity.this, "Facebook", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        mTwitter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(SelectorActivity.this, "Twitter", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+
         // NOPE, SELECT AGAIN
         mSelectAgainButton.setOnClickListener(new View.OnClickListener() {
             @Override
